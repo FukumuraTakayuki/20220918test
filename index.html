@@ -2,84 +2,73 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSSテスト</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <div class="mv">
-  <h1 class="title">キャッチコピー</h1>
+  <div class="firstview">
+   <h1 class="firstview__catchcopy">キャッチコピー</h1>
  </div>
- <div clas="about_content">
-  <h2 class="about">about</h2>
-  <p>COACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>プログラミング未経験でも、<strong>「独自のノウハウ」</strong>でフリーランスエンジニアを目指すことができます。</p>
- </div>
+  <div class="about">
+    <h2 class="section__ttl">About</h2>
+    <p>COACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>プログラミング未経験でも、<strong>「独自のノウハウ」</strong>でフリーランスエンジニアを目指すことができます。</p>
+  </div>
 
- <section>
-  <div class="box">
- </section>
-
-<div class="flex__item">
-  <div class="practice__card">
-    <div class="card__img">
+  <div class="blog">
+   <h2 class="section__ttl">ブログ</h2>
+   <div class="blog__parent">
+    <div class="blog__child">
       <img src="img/blog__eyecatch1.jpg" alt="">
+      <h3>コーチテックブログのタイトルがここに入ります。</h3>
     </div>
-    <div class="card__content">
-      <h2 class="card__ttl">コーチテックブログのタイトルがここに入ります。</h2>
-    </div>
-  </div>
-  <div class="practice__card">
-    <div class="card__img">
+    <div class="blog__child">
       <img src="img/blog__eyecatch2.jpg" alt="">
+      <h3>コーチテックブログのタイトルがここに入ります。</h3>
     </div>
-    <div class="card__content">
-      <h2 class="card__ttl">コーチテックブログのタイトルがここに入ります。</h2>
-    </div>
-  </div>
-  <div class="practice__card">
-    <div class="card__img">
+    <div class="blog__child">
       <img src="img/blog__eyecatch3.jpg" alt="">
-    </div>
-    <div class="card__content">
-      <h2 class="card__ttl">コーチテックブログのタイトルがここに入ります。</h2>
+      <h3>コーチテックブログのタイトルがここに入ります。</h3>
     </div>
   </div>
-</div>
 
- <div>
-  <h2 class="about">お問合せ</h2>
- </div>
-
-
-<form>
-  <table>
+ < div>
+   <h2 class="section__ttl">お問合せ</h2>
+   <form action="">
+   <table class="form__table">
     <tr>
-      <th class="name">お名前</th>
-      <td><input type="text"></td>
+      <th>お名前</th>
+      <td><input name="name" type="text"></td>
     </tr>
     <tr>
-      <th class="mail">メールアドレス</th>
-      <td><input type="text"></td>
+      <th>メールアドレス</th>
+      <td><input name="email" type="email"></td>
     </tr>
+
     <tr>
-      <th class="old">用件</th>
+      <th>用件</th>
       <td>
-        <form action="detail.html" method="get">
-          <select name="select">
-            <option value="koukoku">広告掲載について</option>
+        <select name="select">
+            <option value="one">広告掲載について</option>
+            <option value="two">採用について</option>
+            <option value="three">その他</option>
+        </select>
       </td>
     </tr>
+
     <tr>
-      <th class="nai"><label>内容</label></th>
-      <td><textarea></textarea></td>
+      <th>内容</th>
+      <td><textarea name="textarea" cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="form__btn">
+        <input class="form__btn-item form__btn-item--reset" type="reset" value="削除">
+        <input class="form__btn-item" type="submit" value="送信">
+      </td>
     </tr>
   </table>
-  <div class="buttonwrap">
-    <input type="button" value="戻る">
-    <input type="submit" value="送信">
-  </div>
 </form>
 
 </body>

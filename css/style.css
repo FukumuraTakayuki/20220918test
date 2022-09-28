@@ -1,159 +1,101 @@
-.mv {
-  position: relative;
-  background: url(../img/firstview.jpg) no-repeat center/cover;
-  height: 50vw;
-  width: 100vw;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  color: #fff;
+* {
+  line-height: 1.7;
 }
 
-.about_content{
-  text-align: center;
-  margin: 10%%;
-}
-
-h2{
-  text-align: center;
-    font-size: 25px;
-    margin: 50px 0 40px;
-}
-
-p {
-  text-align: center;
-  font-size: 20px;
-  margin: 10px 0 40px;
-}
-
-.box {
-  width: 1400px;
-  height: 100px;
-  margin: 50px auto;
-  background: black;
-}
-
-.flex__item {
+.firstview {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url(../img/firstview.jpg) no-repeat;
+  color: #fff;
+  margin-bottom: 70px;
 }
 
-.practice__card {
+.firstview__catchcopy {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about {
+  margin-bottom: 70px;
+}
+
+.section__ttl {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.blog{
+  max-width: 1000px;
+  margin: 70px auto 70px;
+}
+
+.blog__parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__child {
   width: 30%;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card__img img {
+.blog__child img {
+  margin-bottom: 20px;
+}
+
+.form__table {
+  max-width: 780px;
+  margin: 0 auto 70px;
   width: 100%;
 }
 
-.card__content {
-  padding: 15px 25px;
+.form__table tr {
+  margin-bottom: 20px;
 }
-
-.card__ttl {
+.form__table th {
   text-align: left;
-  font-size: 24px;
-  margin-bottom: 30px;
-  font-weight: 400;
+  padding: 0;
 }
 
-.card__cat {
-  padding: 5px 10px;
-  background: #008888;
-  margin-bottom: 15px;
-  display: inline-block;
+.form__table input{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.form__table select {
+  margin: 10px 0;
+}
+
+.form__table textarea {
+  width: 100%;
+}
+
+.form__btn {
+  text-align: center;
+}
+
+.form__table .form__btn-item {
+  width: 200px;
+  padding: 10px 0;
+  border: 0;
+  background: #55bbbb;
   color: #fff;
-  font-size: 14px;
 }
 
-
-form table {
-  border-spacing: 0;
-}
-
-form td {
-  padding: 10px;
-
-}
-
-form th {
-  padding: 15px;
-  text-align: center;
-  font-weight: normal;
-  vertical-align: top;
-  width: 35em;
-}
-
-form input[type="text"],
-form textarea {
-  border: 1px solid #999;
-  margin: 0 5px;
-  width: 300px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-.attention {
-  display: inline-block;
-}
-
-.smallinput {
-  width: 100px !important;
-}
-
-.buttonwrap {
-  text-align: center;
-  padding: 20px 0;
-}
-
-form input[type="button"],
-form input[type="submit"] {
-  display: inline-block;
-  background: #82aaaa;
-  padding: 10px;
-  text-align: center;
-  color: #FFF;
-  margin: 5px;
-  border: 1px solid;
-  cursor: pointer;
-  width: 150px;
-}
-
-form input[type="button"] {
-  background: #f2f2f2;
-  color: #333;
-  border: none;
-}
-
-@media (max-width:500px) {
-
-  form table,
-  form tr,
-  form th,
-  form td {
-    display: block;
-  }
-
-  form th {
-    width: auto;
-    border-bottom: none;
-    padding: 13px 10px 0 5em;
-  }
-
-  .hissu::after,
-  .ninni::after {
-    right: auto;
-    left: 15px;
-  }
-
-  form input[type="text"],
-  form textarea {
-    width: calc(100% - 10px);
-  }
+.form__table .form__btn-item--reset {
+  background-color: #ddd;
+  color: #000;
+  margin-right: 20px;
 }
